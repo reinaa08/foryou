@@ -1,104 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Hey Mohit!</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hai Danang</title>
   <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
     body {
-      background: #fff0f5;
-      font-family: 'Comic Sans MS', cursive;
+      background: linear-gradient(135deg, #a2d2ff, #cdb4db);
+      font-family: 'Comic Sans MS', 'Poppins', cursive;
       display: flex;
       justify-content: center;
       align-items: center;
-      flex-direction: column;
-      text-align: center;
       height: 100vh;
-      margin: 0;
+      text-align: center;
+      padding: 20px;
     }
 
-    h1 {
-      font-size: 1.8rem;
-      animation: typing 3s steps(30, end), blink 0.75s step-end infinite;
-      overflow: hidden;
-      white-space: nowrap;
-      border-right: 3px solid black;
-      width: 0;
-    }
-
-    @keyframes typing {
-      from { width: 0 }
-      to { width: 100% }
-    }
-
-    @keyframes blink {
-      from, to { border-color: transparent }
-      50% { border-color: black }
-    }
-
-    .emoji {
-      font-size: 2.5rem;
-      margin-top: 15px;
-      animation: bounce 1s infinite alternate;
-    }
-
-    @keyframes bounce {
-      from { transform: translateY(0); }
-      to { transform: translateY(-10px); }
-    }
-
-    button {
-      margin-top: 20px;
-      padding: 10px 20px;
-      font-size: 1rem;
-      border: none;
+    .container {
+      background-color: #fff;
+      padding: 30px 25px;
       border-radius: 25px;
-      background-color: #ff69b4;
-      color: white;
-      cursor: pointer;
-      transition: background-color 0.3s;
-    }
-
-    button:hover {
-      background-color: #ff1493;
-    }
-
-    #secret {
-      display: none;
-      margin-top: 20px;
-      font-size: 1.2rem;
-      color: #d63384;
-      animation: fadeIn 1s ease-in-out;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      max-width: 300px;
+      width: 100%;
+      animation: fadeIn 1.2s ease-out;
     }
 
     @keyframes fadeIn {
-      from {opacity: 0;}
-      to {opacity: 1;}
+      from {
+        opacity: 0;
+        transform: scale(0.95);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
     }
 
-    footer {
-      position: absolute;
-      bottom: 10px;
-      font-size: 0.8rem;
-      color: #555;
+    h1 {
+      color: #ff6f91;
+      font-size: 1.7rem;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: #6d6875;
+      font-size: 1.1rem;
     }
   </style>
 </head>
 <body>
-
-  <h1>Hai, Mohit! How's your day?</h1>
-  <p>Have you smiled today? 😊</p>
-  <div class="emoji">💖</div>
-
-  <button onclick="showSecret()">Click me!</button>
-  <div id="secret">If you smiled... then my mission is complete 😚🌷</div>
-
-  <footer>Made with 💕 by Nana</footer>
-
-  <script>
-    function showSecret() {
-      document.getElementById("secret").style.display = "block";
-    }
-  </script>
+  <div class="container">
+    <h1>hai, danang.</h1>
+    <p>how’s your day?</p>
+  </div>
 </body>
 </html>
